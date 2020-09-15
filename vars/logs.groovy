@@ -43,9 +43,9 @@ def printer(String message) {
 def initialize(String branch) {
     BRANCH_NAME = ${branch}
 
-    def ENVIRONMENT = 'dev'
-    def PM_CREDENTIALS_ID  = 'aws-prospect-dev'
-    def API_CREDENTIALS_ID = 'aws-api-uat'
+    // def ENVIRONMENT = 'dev'
+    // def PM_CREDENTIALS_ID  = 'aws-prospect-dev'
+    // def API_CREDENTIALS_ID = 'aws-api-uat'
     //
     // if (BRANCH_NAME == 'origin/master') {
     //   PM_CREDENTIALS_ID  = 'aws-prospect-prd'
@@ -61,10 +61,10 @@ def initialize(String branch) {
     // }
 
 
-    def colors = [red: "#FF0000", green:"#00FF00", blue: "#0000FF", ENVIRONMENT: ENVIRONMENT]
+    def response = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
     // def colors = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
     //                API_CREDENTIALS_ID: API_CREDENTIALS_ID,
     //                ENVIRONMENT: ENVIRONMENT]
 
-    return colors
+    return response
 }
