@@ -28,6 +28,6 @@ def checkout(String branch) {
 }
 
 def printer(String message) {
-    String[] arrStr = [message]
+    String[] arrStr = [message, 'awsapi', 'awsstg', 'version']
     return arrStr
 }
