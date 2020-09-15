@@ -35,7 +35,7 @@ def printer(String message) {
         echo "kuha mo!"
     }
     // String[][] arrStr = [message, 'awsapi', 'awsstg', 'version']
-    def colors = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
+    def colors = [red: "#FF0000", green:"#00FF00", blue: "#0000FF", kev: MENSAHE]
     // def doctor = [name: "Oliver","block-no":33,speciality:"Cardiology"]
     return colors
 }
