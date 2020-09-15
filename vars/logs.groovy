@@ -27,6 +27,7 @@ def checkout(String branch) {
     ])
 }
 
-def printer(String message) {
-    return message
+def printer(String message)
+    String[] arrStr = [message]
+    return arrStr
 }
