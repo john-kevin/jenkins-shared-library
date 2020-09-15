@@ -52,7 +52,9 @@ def printer(String message) {
 
 def initialize(String branch) {
     BRANCH_NAME = "${branch}"
-
+    sh"""
+     echo 'aahaha'
+    """
     ENVIRONMENT = 'dev'
     PM_CREDENTIALS_ID  = 'aws-prospect-dev'
     API_CREDENTIALS_ID = 'aws-api-uat'
