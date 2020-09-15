@@ -30,6 +30,7 @@ def checkout(String branch) {
 def printer(String message) {
 
     MENSAHE = "${message}"
+    
     if ( MENSAHE == 'kevin') {
         echo "kuha mo!"
     }
