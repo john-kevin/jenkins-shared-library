@@ -74,8 +74,7 @@ def initialize(String branch) {
     // def response = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
     def response = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
                    API_CREDENTIALS_ID: API_CREDENTIALS_ID,
-                   ENVIRONMENT: ENVIRONMENT,
-                   VERSION: VERSION
+                   ENVIRONMENT: ENVIRONMENT
        ]
 
     return response
