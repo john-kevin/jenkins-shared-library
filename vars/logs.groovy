@@ -6,10 +6,14 @@ def info(message) {
 }
 
 
-def testArray(String[] params) {
-    for(i=0; i<2; i++){
-        echo "${params[i]}"
-    }
+// def testArray(String[] params) {
+//     for(i=0; i<2; i++){
+//         echo "${params[i]}"
+//     }
+// }
+
+def testArray(param) {
+    echo "${param}"
 }
 
 def checkout(String branch) {
