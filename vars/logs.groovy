@@ -13,7 +13,7 @@ def info(message) {
 // }
 
 def testArray(param) {
-    echo "${param}"
+    echo "${param['kev']}"
 }
 
 def checkout(String branch) {
