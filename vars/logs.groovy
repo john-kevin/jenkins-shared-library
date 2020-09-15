@@ -43,9 +43,9 @@ def printer(String message) {
 def initialize(String branch) {
     BRANCH_NAME = ${branch}
 
-    ENVIRONMENT = 'dev'
-    PM_CREDENTIALS_ID  = 'aws-prospect-dev'
-    API_CREDENTIALS_ID = 'aws-api-uat'
+    def ENVIRONMENT = 'dev'
+    def PM_CREDENTIALS_ID  = 'aws-prospect-dev'
+    def API_CREDENTIALS_ID = 'aws-api-uat'
     //
     // if (BRANCH_NAME == 'origin/master') {
     //   PM_CREDENTIALS_ID  = 'aws-prospect-prd'
