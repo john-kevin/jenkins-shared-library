@@ -28,7 +28,9 @@ def checkout(String branch) {
 }
 
 def printer(String message) {
-    if ("${message}" == 'kevin') {
+
+    MENSAHE = "${message}"
+    if ( MENSAHE == 'kevin') {
         echo "kuha mo!"
     }
     // String[][] arrStr = [message, 'awsapi', 'awsstg', 'version']
