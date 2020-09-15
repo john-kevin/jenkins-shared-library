@@ -61,9 +61,10 @@ def initialize(String branch) {
     }
 
 
-    def colors = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
-                   API_CREDENTIALS_ID: API_CREDENTIALS_ID,
-                   ENVIRONMENT: ENVIRONMENT]
+    def colors = [red: "#FF0000", green:"#00FF00", blue: "#0000FF", kev: MENSAHE]
+    // def colors = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
+    //                API_CREDENTIALS_ID: API_CREDENTIALS_ID,
+    //                ENVIRONMENT: ENVIRONMENT]
 
     return colors
 }
