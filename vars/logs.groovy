@@ -6,6 +6,12 @@ def info(message) {
 }
 
 
+def testArray(String[] params) {
+    for(i=0; i<2; i++){
+        echo "${params[i]}"
+    }
+}
+
 def checkout(String branch) {
     echo "Checking out branch ${branch}"
     checkout([
