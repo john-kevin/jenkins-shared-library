@@ -52,7 +52,7 @@ def initialize(String branch) {
       API_CREDENTIALS_ID = 'aws-api-prd'
       ENVIRONMENT        = 'prd'
       //Always create new version of stack for master build
-      // VERSION = readFile 'microservices/build/version'
+      VERSION = readFile 'microservices/build/version'
     } else if (BRANCH_NAME == 'staging') {
       PM_CREDENTIALS_ID = 'aws-prospect-stg'
       ENVIRONMENT    = 'stg'
@@ -64,7 +64,9 @@ def initialize(String branch) {
     // def response = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
     def response = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
                    API_CREDENTIALS_ID: API_CREDENTIALS_ID,
-                   ENVIRONMENT: ENVIRONMENT]
+                   ENVIRONMENT: ENVIRONMENT,
+                   VERSION: VERSION
+       ]
 
     return response
 }
