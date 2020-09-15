@@ -52,7 +52,7 @@ def initialize(String branch) {
       API_CREDENTIALS_ID = 'aws-api-prd'
       ENVIRONMENT        = 'prd'
       //Always create new version of stack for master build
-      VERSION = readFile 'microservices/build/version'
+      // VERSION = readFile 'microservices/build/version'
     } else if (BRANCH_NAME == 'staging') {
       PM_CREDENTIALS_ID = 'aws-prospect-stg'
       ENVIRONMENT    = 'stg'
