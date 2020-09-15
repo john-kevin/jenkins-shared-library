@@ -41,30 +41,30 @@ def printer(String message) {
 }
 
 def initialize(String branch) {
-    BRANCH_NAME = ${branch}
+    BRANCH_NAME = "${branch}"
 
-    // def ENVIRONMENT = 'dev'
-    // def PM_CREDENTIALS_ID  = 'aws-prospect-dev'
-    // def API_CREDENTIALS_ID = 'aws-api-uat'
-    //
-    // if (BRANCH_NAME == 'origin/master') {
-    //   PM_CREDENTIALS_ID  = 'aws-prospect-prd'
-    //   API_CREDENTIALS_ID = 'aws-api-prd'
-    //   ENVIRONMENT        = 'prd'
-    //   //Always create new version of stack for master build
-    //   // VERSION = readFile 'microservices/build/version'
-    // } else if (BRANCH_NAME == 'staging') {
-    //   PM_CREDENTIALS_ID = 'aws-prospect-stg'
-    //   ENVIRONMENT    = 'stg'
-    // } else if (BRANCH_NAME == 'dit') {
-    //   ENVIRONMENT    = 'dit'
-    // }
+    ENVIRONMENT = 'dev'
+    PM_CREDENTIALS_ID  = 'aws-prospect-dev'
+    API_CREDENTIALS_ID = 'aws-api-uat'
+
+    if (BRANCH_NAME == 'origin/master') {
+      PM_CREDENTIALS_ID  = 'aws-prospect-prd'
+      API_CREDENTIALS_ID = 'aws-api-prd'
+      ENVIRONMENT        = 'prd'
+      //Always create new version of stack for master build
+      // VERSION = readFile 'microservices/build/version'
+    } else if (BRANCH_NAME == 'staging') {
+      PM_CREDENTIALS_ID = 'aws-prospect-stg'
+      ENVIRONMENT    = 'stg'
+    } else if (BRANCH_NAME == 'dit') {
+      ENVIRONMENT    = 'dit'
+    }
 
 
-    def response = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
-    // def colors = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
-    //                API_CREDENTIALS_ID: API_CREDENTIALS_ID,
-    //                ENVIRONMENT: ENVIRONMENT]
+    // def response = [red: "#FF0000", green:"#00FF00", blue: "#0000FF"]
+    def response = [ PM_CREDENTIALS_ID: PM_CREDENTIALS_ID,
+                   API_CREDENTIALS_ID: API_CREDENTIALS_ID,
+                   ENVIRONMENT: ENVIRONMENT]
 
     return response
 }
