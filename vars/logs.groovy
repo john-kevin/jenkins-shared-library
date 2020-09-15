@@ -46,19 +46,19 @@ def initialize(String branch) {
     ENVIRONMENT = 'dev'
     PM_CREDENTIALS_ID  = 'aws-prospect-dev'
     API_CREDENTIALS_ID = 'aws-api-uat'
-
-    if (BRANCH_NAME == 'origin/master') {
-      PM_CREDENTIALS_ID  = 'aws-prospect-prd'
-      API_CREDENTIALS_ID = 'aws-api-prd'
-      ENVIRONMENT        = 'prd'
-      //Always create new version of stack for master build
-      // VERSION = readFile 'microservices/build/version'
-    } else if (BRANCH_NAME == 'staging') {
-      PM_CREDENTIALS_ID = 'aws-prospect-stg'
-      ENVIRONMENT    = 'stg'
-    } else if (BRANCH_NAME == 'dit') {
-      ENVIRONMENT    = 'dit'
-    }
+    // 
+    // if (BRANCH_NAME == 'origin/master') {
+    //   PM_CREDENTIALS_ID  = 'aws-prospect-prd'
+    //   API_CREDENTIALS_ID = 'aws-api-prd'
+    //   ENVIRONMENT        = 'prd'
+    //   //Always create new version of stack for master build
+    //   // VERSION = readFile 'microservices/build/version'
+    // } else if (BRANCH_NAME == 'staging') {
+    //   PM_CREDENTIALS_ID = 'aws-prospect-stg'
+    //   ENVIRONMENT    = 'stg'
+    // } else if (BRANCH_NAME == 'dit') {
+    //   ENVIRONMENT    = 'dit'
+    // }
 
 
     def colors = [red: "#FF0000", green:"#00FF00", blue: "#0000FF", kev: MENSAHE]
