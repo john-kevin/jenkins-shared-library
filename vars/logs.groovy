@@ -26,3 +26,7 @@ def checkout(String branch) {
         ]
     ])
 }
+
+def printer(String message) {
+    return message
+}
